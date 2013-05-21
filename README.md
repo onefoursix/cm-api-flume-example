@@ -8,20 +8,24 @@ More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/Fl
 
 
 
-####Dependencies
-- Cloudera Manager 4.1 or higher (I tested with CM 4.5.2)
-- You must have a CM login with Administrator privileges
+####Requirements
+- Cloudera Manager 4.1 or higher (I tested with CM 4.5.2) with at least an HDFS Service running. 
+- CM login with Administrator privileges
 - CDH 4.1 or higher (I tested with CDH 4.2.1)
-- CM API must be installed (see below)
 - Python (I tested on CentOS 6.4 which includes Python 2.6.6)
 - Python SetupTools (see below)
-To run the project you must have access to a Hadoop cluster running Cloudera Impala with at least one populated table defined in the Hive Metastore.
+- CM API must be installed (see below)
+
+
+####Install Python Setup Tools
+
 
 
 ####Install the CM API Client
 Download the CM API Client:
 
     wget https://github.com/cloudera/cm_api/tarball/master
+    
 
 - Select or create the table(s) to query against.
 - Set the query and impalad host in the example source file
