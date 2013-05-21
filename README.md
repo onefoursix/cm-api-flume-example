@@ -51,7 +51,7 @@ For example:
 
     ./create-flume-service.py Flume-NG-Service
 
-At this point a Flume-NG Service is created but without yet having any roles (i.e. Agents)
+At this point a Flume-NG Service has been created but still needs to have Agents created and associated with it.
   
 
 ####Add an Agent
