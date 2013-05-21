@@ -36,3 +36,18 @@ Change to the python directory and install the module (see the README and SHELL_
     # cd cloudera-cm_api-1f8dd19/python
     # python setup.py install
 
+####Create a Flume-NG Service
+
+cd to the root of the scripts directory and edit the file create-flume-service.py.  Set the following:
+- cm_host
+- cm_port
+- cm_login
+- cm_password
+- cluster_name
+- hdfs_service_name
+
+Execute the create-flume-service.py script passing it the name for the Flume-NG Service you want to create.  
+For example:
+
+    
+
