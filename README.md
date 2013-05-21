@@ -76,7 +76,7 @@ I will add a second agent deployed on a different machine:
     
 ####Set or update an Agent's Config File (flume.conf)
 Edit the Flume configuration file(s) you want to use to set your Agent's configuration.
-In this example there are configuration files for Agents named agent0 and agent1 in the directory flume-configs
+In this example there are configuration files for Agents named agent0 and agent1 in the directory flume-conf
 
 Edit the file set-agent-config.py.  Set the following:
 - cm_host
