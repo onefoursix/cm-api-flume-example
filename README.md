@@ -38,7 +38,7 @@ Change to the cm-api's python directory and install the module (see the README a
 
 ####Create a Flume-NG Service
 
-Change to the root of the scripts directory and edit the file create-flume-service.py.  Set the following:
+Change to the root of this example's scripts directory and edit the file create-flume-service.py.  Set the following:
 - cm_host
 - cm_port
 - cm_login
