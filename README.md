@@ -51,5 +51,7 @@ For example:
 
     ./create-flume-service.py Flume-NG-Service
 
-    
+At this point you should see a Flume-NG Service is created but without yet having any instances (i.e. Agents)
+
+![CM1](images/cm-1.jpg)    
 
