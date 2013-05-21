@@ -13,7 +13,7 @@ More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/Fl
 - CM login with Administrator privileges
 - CDH 4.1 or higher (I tested with CDH 4.2.1)
 - Python (I tested on CentOS 6.4 which includes Python 2.6.6)
-- Python SetupTools (see below)
+- Python setuptools (see below)
 - CM API must be installed (see below)
 
 
