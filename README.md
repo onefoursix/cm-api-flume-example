@@ -20,21 +20,35 @@ More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/Fl
 ####Install Python Setup Tools
 On CentOS:
 
-    yum -y install python-setuptools
+    # yum -y install python-setuptools
 
 
 ####Download and Install the CM API Client
 Download the CM API Client:
 
-    $ wget https://github.com/cloudera/cm_api/tarball/master
-    $ tar -xvf master
+    # wget https://github.com/cloudera/cm_api/tarball/master
+    # tar -xvf master
 
 This will give you a dir named something like <code>cloudera-cm_api-1f8dd19<code>
 
 Change to the python directory and install the module (see the README and SHELL_README for additional details):
 
-    cd cloudera-cm_api-1f8dd19/python
-    python setup.py install
+    # cd cloudera-cm_api-1f8dd19/python
+    # python setup.py install
 
+If you feel like it - test the Python Shell:
+
+    # cmps -H <cm-host>
+      Enter Username: admin
+      Enter Password: 
+      Welcome to the Cloudera Manager Console
+      Select a cluster using 'show clusters' and 'use'
+      cloudera> show clusters
+      +------------------+
+      |   CLUSTER NAME   |
+      +------------------+
+      | Cluster 1 - CDH4 |
+      +------------------+
+    
 
     
