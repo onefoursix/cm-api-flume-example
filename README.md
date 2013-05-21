@@ -31,7 +31,6 @@ Download the CM API Client:
 
 This will give you a dir named something like <code>cloudera-cm_api-1f8dd19<code>
 
-- Select or create the table(s) to query against.
-- Set the query and impalad host in the example source file
+Untar it:
 
-These steps are described in more detail below.
+    
