@@ -17,7 +17,7 @@ More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/Fl
 - CM API must be installed (see below)
 
 
-####Install Python Setup Tools
+####Install Python setuptools
 On CentOS:
 
     # yum -y install python-setuptools
