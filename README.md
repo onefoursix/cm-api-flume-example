@@ -19,6 +19,7 @@ More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/Fl
 
 ####Install Python Setup Tools
 On CentOS:
+
     yum -y install python-setuptools
 
 
