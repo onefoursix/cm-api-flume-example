@@ -39,16 +39,30 @@ Change to the python directory and install the module (see the README and SHELL_
 If you feel like it - test the Python Shell:
 
     # cmps -H <cm-host>
-      Enter Username: admin
-      Enter Password: 
-      Welcome to the Cloudera Manager Console
-      Select a cluster using 'show clusters' and 'use'
-      cloudera> show clusters
-      +------------------+
-      |   CLUSTER NAME   |
-      +------------------+
-      | Cluster 1 - CDH4 |
-      +------------------+
+    Enter Username: admin
+    Enter Password: 
+    Welcome to the Cloudera Manager Console
+    Select a cluster using 'show clusters' and 'use'
+    cloudera> show clusters
+    +------------------+
+    |   CLUSTER NAME   |
+    +------------------+
+    | Cluster 1 - CDH4 |
+    +------------------+
     
+    cloudera> use Cluster 1 - CDH4
+    Connected to Cluster 1 - CDH4
+    Cluster 1 - CDH4> status
+    +------------+-----------+---------+--------+------------+
+    | NAME       | SERVICE   |  STATUS | HEALTH |   CONFIG   |
+    +------------+-----------+---------+--------+------------+
+    | hue1       | HUE       | STARTED |  GOOD  | UP TO DATE |
+    | oozie1     | OOZIE     | STOPPED |  GOOD  | UP TO DATE |
+    | hdfs1      | HDFS      | STARTED |  GOOD  | UP TO DATE |
+    | impala1    | IMPALA    | STARTED |  GOOD  | UP TO DATE |
+    | mapreduce1 | MAPREDUCE | STARTED |  GOOD  | UP TO DATE |
+    | hive1      | HIVE      | STARTED |  GOOD  | UP TO DATE |
+    +------------+-----------+---------+--------+------------+
+    Cluster 1 - CDH4> 
 
     
