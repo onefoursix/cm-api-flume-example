@@ -49,5 +49,7 @@ cd to the root of the scripts directory and edit the file create-flume-service.p
 Execute the create-flume-service.py script passing it the name for the Flume-NG Service you want to create.  
 For example:
 
+    ./create-flume-service.py Flume-NG-Service
+
     
 
