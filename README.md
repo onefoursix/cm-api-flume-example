@@ -46,7 +46,7 @@ Change to the root of this example's scripts directory and edit the file create-
 - cluster_name
 - hdfs_service_name
 
-Execute the create-flume-service.py script passing it the name for the Flume-NG Service you want to create.  
+Execute the create-flume-service.py script passing it the name of the Flume-NG Service you want to create.  
 For example:
 
     ./create-flume-service.py Flume-NG-Service
