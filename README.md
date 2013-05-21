@@ -9,7 +9,7 @@ More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/Fl
 
 
 ####Requirements
-- Cloudera Manager 4.1 or higher (I tested with CM 4.5.2) with at least an HDFS Service running. 
+- Cloudera Manager 4.1 or higher (I tested with CM 4.5.2) with a configured HDFS Service. 
 - CM login with Administrator privileges
 - CDH 4.1 or higher (I tested with CDH 4.2.1)
 - Python (I tested on CentOS 6.4 which includes Python 2.6.6)
