@@ -31,6 +31,10 @@ Download the CM API Client:
 
 This will give you a dir named something like <code>cloudera-cm_api-1f8dd19<code>
 
-Untar it:
+Change to the nested python directory and install the module:
+
+    cd cloudera-cm_api-1f8dd19/python
+    python setup.py install
+
 
     
