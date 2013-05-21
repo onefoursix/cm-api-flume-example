@@ -114,14 +114,22 @@ I'll restart both agents:
 
 
 ####Viewing the results in Cloudera Manager
+
 Here we see the Flume-NG Service:
+
 ![](images/cm-1.jpg)
 
+
 Here are the two Agents:
+
 ![](images/cm-2.jpg)
 
+
 Here is the flume.conf for agent0
+
 ![](images/cm-3.jpg)
 
+
 Here is the flume.conf for agent1
+
 ![](images/cm-4.jpg)
