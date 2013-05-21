@@ -23,7 +23,7 @@ On CentOS:
     yum -y install python-setuptools
 
 
-####Install the CM API Client
+####Download and Install the CM API Client
 Download the CM API Client:
 
     wget https://github.com/cloudera/cm_api/tarball/master
