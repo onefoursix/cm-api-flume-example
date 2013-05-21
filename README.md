@@ -26,8 +26,10 @@ On CentOS:
 ####Download and Install the CM API Client
 Download the CM API Client:
 
-    wget https://github.com/cloudera/cm_api/tarball/master
-    
+    $ wget https://github.com/cloudera/cm_api/tarball/master
+    $ tar -xvf master
+
+This will give you a dir named something like <code>cloudera-cm_api-1f8dd19<code>
 
 - Select or create the table(s) to query against.
 - Set the query and impalad host in the example source file
