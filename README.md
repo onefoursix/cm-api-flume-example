@@ -19,7 +19,9 @@ To run the project you must have access to a Hadoop cluster running Cloudera Imp
 
 
 ####Install the CM API Client
-Download the CM API Client onto a 
+Download the CM API Client:
+
+    wget https://github.com/cloudera/cm_api/tarball/master
 
 - Select or create the table(s) to query against.
 - Set the query and impalad host in the example source file
