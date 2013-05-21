@@ -38,7 +38,7 @@ Change to the python directory and install the module (see the README and SHELL_
 
 ####Create a Flume-NG Service
 
-cd to the root of the scripts directory and edit the file create-flume-service.py.  Set the following:
+Change to the root of the scripts directory and edit the file create-flume-service.py.  Set the following:
 - cm_host
 - cm_port
 - cm_login
@@ -51,7 +51,77 @@ For example:
 
     ./create-flume-service.py Flume-NG-Service
 
-At this point you should see a Flume-NG Service is created but without yet having any instances (i.e. Agents)
+At this point a Flume-NG Service is created but without yet having any roles (i.e. Agents)
+  
 
-![CM1](images/cm-1.jpg)    
+####Add an Agent
 
+Edit the file add-agent.py.  Set the following:
+- cm_host
+- cm_port
+- cm_login
+- cm_password
+- cluster_name
+
+Execute the add-agent.py script passing it the name for the Flume-NG Service, the name of the Agent you want to create and the host the Agent should be deployed on. Note the Agent name will be the value used within the flume.conf file so should typically be a short lowercase name. 
+
+For example:
+
+    ./add-agent.py Flume-NG-Service agent0 mbrooks0.onefoursix.com
+
+I will add a second agent deployed on a different machine:
+
+    ./add-agent.py Flume-NG-Service agent1 mbrooks1.onefoursix.com
+    
+    
+####Set or update an Agent's Config File (flume.conf)
+Edit the Flume configuration file(s) you want to use to set your Agent's configuration.
+In this example there are configuration files for Agents named agent0 and agent1 in the directory flume-confs
+
+Edit the file set-agent-config.py.  Set the following:
+- cm_host
+- cm_port
+- cm_login
+- cm_password
+- cluster_name
+- flume_service_name
+
+Execute the set-agent-config.py script passing it the Agent name and the configuration file.  For example
+
+    ./set-agent-config.py agent0 ../flume-conf/agent0-flume.conf
+    
+I'll set a different conf file on my second agent:    
+    
+    ./set-agent-config.py agent1 ../flume-conf/agent1-flume.conf
+    
+        
+####Restart an Agent
+Edit the file restart-agent.py.  Set the following:
+- cm_host
+- cm_port
+- cm_login
+- cm_password
+- cluster_name
+- flume_service_name
+
+Execute the restart-agent.py script passing it the Agent name.  
+
+I'll restart both agents:
+
+    ./restart-agent.py agent0
+    
+    ./restart-agent.py agent1
+
+
+####Viewing the results in Cloudera Manager
+Here we see the Flume-NG Service:
+![](images/cm-1.jpg)
+
+Here are the two Agents:
+![](images/cm-2.jpg)
+
+Here is the flume.conf for agent0
+![](images/cm-3.jpg)
+
+Here is the flume.conf for agent1
+![](images/cm-4.jpg)
