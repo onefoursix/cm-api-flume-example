@@ -68,4 +68,4 @@ for role in role_list:
 print "Creating FLUME Agent..."
 role = flume_service.create_role(role_type = "AGENT", role_name = agent_ref, host_id = agent_host)
 role.update_config({"agent_name" : agent_ref})
-print "Flume agent created!"
+print "Flume Agent created!"
