@@ -133,3 +133,12 @@ Here is the flume.conf for agent0
 Here is the flume.conf for agent1
 
 ![](images/cm-4.jpg)
+
+
+
+Cloudera Manager's Configuration Tracking and Rollback features tracks all changes - including those made through the API as in this example:
+
+![](images/cm-5.jpg)
+
+
+
