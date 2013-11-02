@@ -3,7 +3,7 @@
 ## *******************************************************************************************
 ## set-agent-config.py 
 ## 
-## Example of how to set the Flume Configuration file for a Flume Agent using the Cloudera Manager AP
+## Example of how to set the Flume Configuration file for a Flume Agent using the Cloudera Manager API
 ## 
 ## Usage: set-agent-config.py <agent-id> <config-file>
 ##
