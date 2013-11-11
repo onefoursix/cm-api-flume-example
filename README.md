@@ -16,25 +16,26 @@ More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/Fl
 - Python setuptools (see below)
 - CM API must be installed (see below)
 
-
-####Install Python setuptools
+####Install Python setuptools and unzip
 On CentOS:
 
     # yum -y install python-setuptools
+    # yum -y install unzip
 
 
 ####Download and Install the Cloudera Manager API Client
-Download the CM API Client:
+Download the CM API Client for your version of CM.  I am using CM 4.7.2, so I will use the cm-4.7 version of the API:
 
-    # wget https://github.com/cloudera/cm_api/tarball/master
-    # tar -xvf master
+    # wget wget https://github.com/cloudera/cm_api/archive/cm-4.7.zip
+    # unzip cm-4.7
 
-This will give you a dir named something like <code>cloudera-cm_api-1f8dd19<code>
+This will create a dir named cm_api-cm-4.7
 
 Change to the cm-api's python directory and install the CM-API module (see the README and SHELL_README for additional details):
 
-    # cd cloudera-cm_api-1f8dd19/python
+    # cd cm_api-cm-4.7/python
     # python setup.py install
+
 
 ####Create a Flume-NG Service
 
