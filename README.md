@@ -9,25 +9,29 @@ More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/Fl
 
 
 ####Requirements
-- Cloudera Manager 4.1 or higher (I tested with CM 4.5.2) with a configured HDFS Service. 
+- Cloudera Manager 5.2 or higher (I tested with CM 5.4.7) with a configured HDFS Service. 
 - CM login with Administrator privileges
-- CDH 4.1 or higher (I tested with CDH 4.2.1)
-- Python (I tested on CentOS 6.4 which includes Python 2.6.6)
+- CDH 5.3 or higher (I tested with CDH 5.4.7)
+- Python (I tested on CentOS 6.5 which includes Python 2.6.6)
 - Python setuptools (see below)
 - CM API must be installed (see below)
 
 ####Install Python setuptools and unzip
 On CentOS:
 
-    # yum -y install python-setuptools
-    # yum -y install unzip
+    $ sudo yum -y install python-setuptools
+    $ sudo yum -y install unzip
 
 
-####Download and Install the Cloudera Manager API Client
-Download the CM API Client for your version of CM.  I am using CM 4.5.2, so I will use the cm-4.5 version of the API:
+####Download and Install the Cloudera Manager API Python Client
+Download the CM API Python Client for your version of CM.
 
-    # wget wget https://github.com/cloudera/cm_api/archive/cm-4.5.zip
-    # unzip cm-4.5
+Instructions for installing the CM API Python Client is [here](http://cloudera.github.io/cm_api/docs/python-client/) 
+
+I am using CM 4.5.2, so I will use the cm-4.5 version of the API:
+
+    $ wget wget https://github.com/cloudera/cm_api/archive/cm-4.5.zip
+    $ unzip cm-4.5
 
 This will create a dir named cm_api-cm-4.5
 
