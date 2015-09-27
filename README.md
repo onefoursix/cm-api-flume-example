@@ -10,14 +10,16 @@ More information:  [Flume](http://archive.cloudera.com/cdh5/cdh/5/flume-ng/Flume
 
 ####Requirements
 - Cloudera Manager 5.2 or higher (I tested with CM 5.4.7)  
-- CM login with Administrator privileges
 - CDH 5.2 or higher (I tested with CDH 5.4.7)
 - A configured HDFS Service.
 - Python (I tested on CentOS 6.6 which includes Python 2.6.6)
 - Python setuptools (see below)
 - The correct version of the CM API (see below)
 
-
+####Cloudera Manager Roles
+- CM login with at least "Cluster Administrator" role to create a Flume Service or add an Agent to a Flume Service
+- CM login with at least "Configurator" role to deploy an Agent's config file
+- CM login with at least "Operator" role to start or restart Agent(s)
 
 
 ####Install the Cloudera Manager API Python Client
