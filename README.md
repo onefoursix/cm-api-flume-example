@@ -33,7 +33,11 @@ Here are the steps I used on CentOS 6.6 to install the current version (v10) of 
 
 Point your browser to [https://github.com/cloudera/cm_api](https://github.com/cloudera/cm_api)
 
-Use the dropdown to pick the version you need
+Use the dropdown to pick the version you need, for example
+
+![](images/cm-1.jpg)
+
+
 
     $ sudo yum -y install python-setuptools
     $ sudo yum -y install unzip
