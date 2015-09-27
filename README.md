@@ -37,7 +37,7 @@ Use the dropdown to pick the branch you need. For example, I will use the branch
 
 ![](images/github.jpg)
 
-Once you have selected the branch you need, copy the link to download the project as a zip file by right-clicking on the "Download ZIP" button
+Once you have selected the branch you need, copy the link to download the project as a zip file by right-clicking on the "Download ZIP" button:
 
 ![](images/github-2.jpg)
 
