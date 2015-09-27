@@ -16,7 +16,7 @@ More information:  [Flume](http://archive.cloudera.com/cdh5/cdh/5/flume-ng/Flume
 - Python setuptools (see below)
 - The correct version of the CM API (see below)
 - CM login with at least "Cluster Administrator" role to create a Flume Service
-- CM login with at least "Cluster Administrator" role to 
+- CM login with at least "Cluster Administrator" role to add an Agent instance to a Flume Service 
 - CM login with at least "Configurator" role to deploy an Agent's config file
 - CM login with at least "Operator" role to start or restart Agent(s)
 
