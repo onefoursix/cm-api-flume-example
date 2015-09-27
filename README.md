@@ -33,11 +33,13 @@ Here are the steps I used on CentOS 6.6 to install the current version (v10) of 
 
 Point your browser to [https://github.com/cloudera/cm_api](https://github.com/cloudera/cm_api)
 
-Use the dropdown to pick the branch you need. For example, I will use the CM5-5.4 branch:
+Use the dropdown to pick the branch you need. For example, I will use the branch for CM5.4:
 
 ![](images/github.jpg)
 
+Once you have selected the branch you need, copy the link to download the project as a zip file by right-clicking on the 
 
+![](images/github-2.jpg)
 
     $ sudo yum -y install python-setuptools
     $ sudo yum -y install unzip
