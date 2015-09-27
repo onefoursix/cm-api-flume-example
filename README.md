@@ -37,13 +37,37 @@ Use the dropdown to pick the branch you need. For example, I will use the branch
 
 ![](images/github.jpg)
 
-Once you have selected the branch you need, copy the link to download the project as a zip file by right-clicking on the 
+Once you have selected the branch you need, copy the link to download the project as a zip file by right-clicking on the "Download ZIP" button
 
 ![](images/github-2.jpg)
+
+In my case for the CM5.4 API (which is the current version at the time of this writing) the link is: 
+
+	https://github.com/cloudera/cm_api/archive/cm5-5.4.zip
+
+If you need an older version, for example, the CM5.2 version, the download link would be:
+
+	https://github.com/cloudera/cm_api/archive/cm5-5.2.zip
+
+Once you have the download link, download the archive on the machine where you want to install the CM API(in my case I'll get the CM5.4 version):
+
+	$ wget https://github.com/cloudera/cm_api/archive/cm5-5.4.zip
+
+
+Install some utils you'll need: 
 
     $ sudo yum -y install python-setuptools
     $ sudo yum -y install unzip
 
+
+Unzip the archive:
+
+	$ unzip cm5*.zip
+
+Install the API:
+
+	$ cd cm_api*/python
+	$ sudo python setup.py install
 
 
 
