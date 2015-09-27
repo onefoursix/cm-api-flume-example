@@ -49,7 +49,7 @@ If you need an older version, for example, the CM5.2 version, the download link 
 
 	https://github.com/cloudera/cm_api/archive/cm5-5.2.zip
 
-Once you have the download link, download the archive on the machine where you want to install the CM API(in my case I'll get the CM5.4 version):
+Once you have the download link, download the archive on the machine where you want to install the CM API:
 
 	$ wget https://github.com/cloudera/cm_api/archive/cm5-5.4.zip
 
