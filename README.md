@@ -11,11 +11,11 @@ More information:  [Flume](http://archive.cloudera.com/cdh5/cdh/5/flume-ng/Flume
 ####Requirements
 - Cloudera Manager 5.2 or higher (I tested with CM 5.4.7)  
 - CM login with Administrator privileges
-- CDH 5.3 or higher (I tested with CDH 5.4.7)
+- CDH 5.2 or higher (I tested with CDH 5.4.7)
 - A configured HDFS Service.
 - Python (I tested on CentOS 6.6 which includes Python 2.6.6)
 - Python setuptools (see below)
-- The correct version of the CM API must be installed (see below)
+- The correct version of the CM API (see below)
 
 
 
@@ -71,7 +71,7 @@ Install the API:
 
 
 
-####Create a Flume-NG Service
+####Create a Flume Service
 
 Change to the root of this example's scripts directory and edit the file create-flume-service.py.  Set the following:
 - cm_host
@@ -81,12 +81,12 @@ Change to the root of this example's scripts directory and edit the file create-
 - cluster_name
 - hdfs_service_name
 
-Execute the create-flume-service.py script passing it the name of the Flume-NG Service you want to create.  
+Execute the create-flume-service.py script passing it the name of the Flume Service you want to create.  
 For example:
 
-    ./create-flume-service.py Flume-NG-Service
+    ./create-flume-service.py Flume-Service
 
-At this point a Flume-NG Service has been created but still needs to have Agents created and associated with it.
+At this point a Flume Service has been created but still needs to have Agents created and associated with it.
   
 
 ####Add an Agent
