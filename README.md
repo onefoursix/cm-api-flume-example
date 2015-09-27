@@ -1,44 +1,44 @@
 cm-api-flume-example
 ====================
 
-This project provides an example of using Cloudera Manager's Python API Client to create a Flume-NG Service and Flume-NG Agents, to set and update Flume-NG Agent config files, and to restart Flume-NG Agent processes.
+This project provides an example of using Cloudera Manager's Python API Client to create a Flume Service and Flume Agents, to set and update Flume Agent config files, and to restart Flume Agent processes.
 
-More information:  [Flume-NG](http://archive.cloudera.com/cdh4/cdh/4/flume-ng/FlumeUserGuide.html),  [Cloudera Manager](http://www.cloudera.com/content/cloudera/en/products-and-services/cloudera-enterprise/cloudera-manager.html), [CM API Client](http://cloudera.github.io/cm_api/)
+More information:  [Flume](http://archive.cloudera.com/cdh5/cdh/5/flume-ng/FlumeUserGuide.html),  [Cloudera Manager](http://www.cloudera.com/content/cloudera/en/products-and-services/cloudera-enterprise/cloudera-manager.html), [CM API Client](http://cloudera.github.io/cm_api/)
 
 
 
 
 ####Requirements
-- Cloudera Manager 5.2 or higher (I tested with CM 5.4.7) with a configured HDFS Service. 
+- Cloudera Manager 5.2 or higher (I tested with CM 5.4.7)  
 - CM login with Administrator privileges
 - CDH 5.3 or higher (I tested with CDH 5.4.7)
-- Python (I tested on CentOS 6.5 which includes Python 2.6.6)
+- A configured HDFS Service.
+- Python (I tested on CentOS 6.6 which includes Python 2.6.6)
 - Python setuptools (see below)
-- CM API must be installed (see below)
+- The correct version of the CM API must be installed (see below)
 
-####Install Python setuptools and unzip
-On CentOS:
+
+
+
+####Install the Cloudera Manager API Python Client
+Download the version of the CM API Python Client that matches the version of Cloudera Manager you are using.
+
+Consult the chart [here](http://cloudera.github.io/cm_api/docs/releases/) to see what version of the the API you will need to install
+
+At the time of this writing, the current version of CM is 5.4.7 and I will install the version 10 of the CM API Python Client
+
+Instructions for installing the CM API Python Client are [here](http://cloudera.github.io/cm_api/docs/python-client/) 
+
+Here are the steps I used on CentOS 6.6 to install the current version (v10) of the API for use with CM 5.4.x:
+
+Point your browser to [https://github.com/cloudera/cm_api](https://github.com/cloudera/cm_api)
+
+Use the dropdown to pick the version you need
 
     $ sudo yum -y install python-setuptools
     $ sudo yum -y install unzip
 
 
-####Download and Install the Cloudera Manager API Python Client
-Download the CM API Python Client for your version of CM.
-
-Instructions for installing the CM API Python Client is [here](http://cloudera.github.io/cm_api/docs/python-client/) 
-
-I am using CM 4.5.2, so I will use the cm-4.5 version of the API:
-
-    $ wget wget https://github.com/cloudera/cm_api/archive/cm-4.5.zip
-    $ unzip cm-4.5
-
-This will create a dir named cm_api-cm-4.5
-
-Change to the cm-api's python directory and install the CM-API module (see the README and SHELL_README for additional details):
-
-    # cd cm_api-cm-4.5/python
-    # python setup.py install
 
 
 ####Create a Flume-NG Service
