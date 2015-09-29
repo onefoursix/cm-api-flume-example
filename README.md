@@ -15,16 +15,14 @@ More information:  [Flume](http://archive.cloudera.com/cdh5/cdh/5/flume-ng/Flume
 - Python (I tested on CentOS 6.6 which includes Python 2.6.6)
 - Python setuptools (see below)
 - The correct version of the CM API (see below)
-- CM login with at least "Cluster Administrator" role to create a Flume Service
-- CM login with at least "Cluster Administrator" role to add an Agent instance to a Flume Service 
-- CM login with at least "Configurator" role to deploy an Agent's config file
-- CM login with at least "Operator" role to start or restart Agent(s)
+- A CM login with at least "Cluster Administrator" role to create a Flume Service
+- A CM login with at least "Cluster Administrator" role to add an Agent instance to a Flume Service 
+- A CM login with at least "Configurator" role to deploy an Agent's config file
+- A CM login with at least "Operator" role to start or restart Agent(s)
 
 
 ####Install the Cloudera Manager API Python Client
-Download the version of the CM API Python Client that matches the version of Cloudera Manager you are using.
-
-Consult the chart [here](http://cloudera.github.io/cm_api/docs/releases/) to see what version of the the API you will need to install
+Download the version of the CM API Python Client that matches the version of Cloudera Manager you are using. Consult the chart [here](http://cloudera.github.io/cm_api/docs/releases/) to see what version of the the API you will need to install
 
 At the time of this writing, the current version of CM is 5.4.7 and I will install the version 10 of the CM API Python Client
 
@@ -32,13 +30,13 @@ Instructions for installing the CM API Python Client are [here](http://cloudera.
 
 Here are the steps I used on CentOS 6.6 to install the current version (v10) of the API for use with CM 5.4.x:
 
-Point your browser to [https://github.com/cloudera/cm_api](https://github.com/cloudera/cm_api)
+Use a browser to go to [https://github.com/cloudera/cm_api](https://github.com/cloudera/cm_api)
 
 Use the dropdown to pick the branch you need. For example, I will use the branch for CM5.4:
 
 ![](images/github.jpg)
 
-Once you have selected the branch you need, copy the link to download the project as a zip file by right-clicking on the "Download ZIP" button:
+Once the right branch is selected, right-click on the "Download ZIP" button:
 
 ![](images/github-2.jpg)
 
@@ -85,7 +83,7 @@ Change to the root of this example's scripts directory and edit the file create-
 Execute the create-flume-service.py script passing it the name of the Flume Service you want to create.  
 For example:
 
-    ./create-flume-service.py Flume-Service
+    ./create-flume-service.py Flume
 
 At this point a Flume Service has been created but still needs to have Agents created and associated with it.
   
@@ -99,15 +97,15 @@ Edit the file add-agent.py.  Set the following:
 - cm_password
 - cluster_name
 
-Execute the add-agent.py script passing it the name for the Flume-NG Service, the name of the Agent you want to create and the host the Agent should be deployed on. Note the Agent name will be the value used within the flume.conf file so should typically be a short lowercase name. 
+Execute the add-agent.py script passing it the name for the Flume Service, the name of the Agent you want to create and the host the Agent should be deployed on. Note the Agent name will be the value used within the flume.conf file so should typically be a short lowercase name. 
 
 For example:
 
-    ./add-agent.py Flume-NG-Service agent0 mbrooks0.onefoursix.com
+    ./add-agent.py Flume agent0 mbrooks0.onefoursix.com
 
 I will add a second agent deployed on a different machine:
 
-    ./add-agent.py Flume-NG-Service agent1 mbrooks1.onefoursix.com
+    ./add-agent.py Flume agent1 mbrooks1.onefoursix.com
     
     
 ####Set or update an Agent's Config File (flume.conf)
