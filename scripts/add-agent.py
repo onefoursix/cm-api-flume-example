@@ -23,7 +23,7 @@ from cm_api.api_client import ApiResource
 ##  ** Settings ******************************
 
 ## Cloudera Manager Host
-cm_host = "mbrooks0.onefoursix.com"
+cm_host = "brooklyn.onefoursix.com"
 cm_port = "7180"
 
 ## Cloudera Manager login with at least Cluster Administrator role
