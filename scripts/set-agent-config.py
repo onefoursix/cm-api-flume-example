@@ -7,7 +7,7 @@
 ## 
 ## Usage: set-agent-config.py <agent-id> <config-file>
 ##
-##        for example:  set-agent-config.py agent1 flume.conf
+##        for example:  set-agent-config.py agent1 agent1.conf
 ## 
 ##        (the rest of the values are set in the script below)
 ## 
@@ -23,20 +23,20 @@ from cm_api.api_client import ApiResource
 ## ** Settings ******************************
 
 ## Cloudera Manager Host
-cm_host = "mbrooks0.onefoursix.com"
+cm_host = "brooklyn.onefoursix.com"
 cm_port = "7180"
 
-## Cloudera Manager login
-cm_login = "admin"
+## Cloudera Manager login with at least Configurator role
+cm_login = "configurator"
 
 ## Cloudera Manager password
-cm_password = "admin"
+cm_password = "configurator_password"
 
 ## Cluster Name
-cluster_name = "Cluster 1 - CDH4"
+cluster_name = "Cluster 1"
 
 ## Name of Flume Service
-flume_service_name = "Flume-NG-Service"
+flume_service_name = "Flume"
 
 ## ******************************************
 

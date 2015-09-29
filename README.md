@@ -101,11 +101,11 @@ Execute the add-agent.py script passing it the name for the Flume Service, the n
 
 For example:
 
-    ./add-agent.py Flume agent0 mbrooks0.onefoursix.com
+    ./add-agent.py Flume agent0 portland.onefoursix.com
 
 I will add a second agent deployed on a different machine:
 
-    ./add-agent.py Flume agent1 mbrooks1.onefoursix.com
+    ./add-agent.py Flume agent1 chicago.onefoursix.com
     
     
 ####Set or update an Agent's Config File (flume.conf)
