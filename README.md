@@ -137,7 +137,7 @@ We can see both Agents have their own configs:
 
 ![](images/agent0.jpg)  
  
-![](images/agent01.jpg)
+![](images/agent1.jpg)
          
 ####Restart an Agent
 Edit the file restart-agent.py.  Set the following:
