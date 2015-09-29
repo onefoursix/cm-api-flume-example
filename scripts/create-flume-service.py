@@ -49,16 +49,13 @@ if len(sys.argv) != 2:
 ## Name of Flume Service to create
 flume_service_name = sys.argv[1]
 
-
-from cm_api.api_client import ApiResource
-
-## Get the Cluster 
+## Connect to CM
 print "\nConnecting to Cloudera Manager at " + cm_host + ":" + cm_port + "..."
 api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password)
-cluster = api.get_cluster(cluster_name)
 print "Connection is good!"
-print "Cluster Name: " + cluster.name
-print "Cluster Version: " + cluster.version
+
+## Get the Cluster 
+cluster = api.get_cluster(cluster_name)
 
 ## Get the existing Services
 service_list = cluster.get_all_services()
@@ -93,6 +90,3 @@ flume_service = cluster.create_service(name=flume_service_name, service_type="FL
 flume_service.update_config({'hdfs_service':hdfs_service_name})  
     
 print "FLUME Service created!"
-
-
-
