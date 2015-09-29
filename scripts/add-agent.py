@@ -26,7 +26,7 @@ from cm_api.api_client import ApiResource
 cm_host = "mbrooks0.onefoursix.com"
 cm_port = "7180"
 
-## Cloudera Manager login
+## Cloudera Manager login with at least Cluster Administrator role
 cm_login = "admin"
 
 ## Cloudera Manager password
