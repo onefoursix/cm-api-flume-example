@@ -159,14 +159,9 @@ I'll restart both agents:
 
 ####Viewing the results in Cloudera Manager
 
-Here we see the Flume Service:
-
-![](images/flume-service.jpg)
-
-
 Here are the two Agents:
 
-![](images/flume-instances.jpg)
+![](images/flume-agents.jpg)
 
 
 Cloudera Manager's Configuration Tracking and Rollback features tracks all changes - including those made through the API as in this example:
