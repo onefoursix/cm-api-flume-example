@@ -108,7 +108,7 @@ I will add a second agent deployed on a different machine:
     ./add-agent.py Flume agent1 chicago.onefoursix.com
     
  
-Note the script sets the Agent's name:
+Note the script sets each Agent's name:
 
 ![](images/cm-6.jpg) 
     
