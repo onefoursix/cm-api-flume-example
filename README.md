@@ -107,9 +107,13 @@ I will add a second agent deployed on a different machine:
 
     ./add-agent.py Flume agent1 chicago.onefoursix.com
     
+ 
+Note the script sets the Agent's name:
+
+![](images/cm-6.jpg) 
     
 ####Set or update an Agent's Config File (flume.conf)
-Edit the Flume configuration file(s) you want to use to set your Agent's configuration.
+Edit the Flume configuration file(s) you want to use to set your Agents' configuration.
 In this example there are configuration files for Agents named agent0 and agent1 in the directory flume-conf
 
 Edit the file set-agent-config.py.  Set the following:
@@ -128,7 +132,13 @@ I'll set a different conf file on my second agent:
     
     ./set-agent-config.py agent1 ../flume-conf/agent1-flume.conf
     
-        
+ 
+We can see both Agents have their own configs:
+
+![](images/agent0.jpg)  
+ 
+![](images/agent01.jpg)
+         
 ####Restart an Agent
 Edit the file restart-agent.py.  Set the following:
 - cm_host
