@@ -7,7 +7,7 @@
 ##
 ## Usage: create-flume-service.py <flume-service-name>
 ## 
-##        for example: create-flume-service.py Flume-NG-Service
+##        for example: create-flume-service.py Flume
 ## 
 ##        (the rest of the values are set in the script below)
 ## 
@@ -22,20 +22,20 @@ from cm_api.api_client import ApiResource
 ## ** Settings ******************************
 
 ## Cloudera Manager Host
-cm_host = "mbrooks0.onefoursix.com"
+cm_host = "brooklyn.onefoursix.com"
 cm_port = "7180"
 
-## Cloudera Manager login
-cm_login = "admin"
+## Cloudera Manager login with at least Cluster Administrator role
+cm_login = "cluster_admin"
 
 ## Cloudera Manager password
-cm_password = "admin"
+cm_password = "cluster_admin_password"
 
 ## Cluster Name
-cluster_name = "Cluster 1 - CDH4"
+cluster_name = "Cluster 1"
 
 # Name of the existing HDFS Service or "none"
-hdfs_service_name = "hdfs1"
+hdfs_service_name = "hdfs"
 
 ## *****************************************
 
@@ -43,7 +43,7 @@ hdfs_service_name = "hdfs1"
 if len(sys.argv) != 2:
   print "Error: Wrong number of arguments"
   print "Usage: create-flume-service.py <flume-service-name>"
-  print "Example: create-flume-service.py  Flume-NG-Service"
+  print "Example: create-flume-service.py  Flume"
   quit(1)
 
 ## Name of Flume Service to create
@@ -64,8 +64,8 @@ print "Cluster Version: " + cluster.version
 service_list = cluster.get_all_services()
 
 ## Check that a FLUME service does not already exist
-## you could skip this check if you want as it is OK to have multiple FLUME services on a cluster
-## but I included the check just as a safeguard in case you only want one FLUME service on your cluster
+## You could skip this check if you want if you want to have more than one FLUME services on your cluster
+## I included the check just as a safeguard in case you only want one FLUME service on your cluster
 for service in service_list:
   if service.type == "FLUME":
     print "Error: A FLUME Service already exists (Service Name: '" + service.name + "')"
