@@ -27,16 +27,16 @@ cm_host = "mbrooks0.onefoursix.com"
 cm_port = "7180"
 
 ## Cloudera Manager login
-cm_login = "admin"
+cm_login = "flume"
 
 ## Cloudera Manager password
-cm_password = "admin"
+cm_password = "flume"
 
 ## Cluster Name
-cluster_name = "Cluster 1 - CDH4"
+cluster_name = "Cluster 1"
 
 ## Name of Flume Service
-flume_service_name = "Flume-NG-Service"
+flume_service_name = "Flume"
 
 ## ******************************************
 
@@ -60,7 +60,12 @@ cluster = api.get_cluster(cluster_name)
 ## Get the Flume Service
 flume_service = cluster.get_service(flume_service_name)
 
-## Restart the Agent
-flume_service.restart_roles({"role_name":agent_ref})
+## Get the Agent 
+for role in flume_service.get_all_roles():
+  if role.name == agent_ref:
+  
+## Restart the Agent  
+    flume_service.restart_roles(role.name)
+    break
 
 print "Restart command initiated!"
