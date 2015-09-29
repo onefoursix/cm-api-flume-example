@@ -27,20 +27,20 @@ cm_host = "mbrooks0.onefoursix.com"
 cm_port = "7180"
 
 ## Cloudera Manager login with at least Cluster Administrator role
-cm_login = "admin"
+cm_login = "cluster_admin"
 
 ## Cloudera Manager password
-cm_password = "admin"
+cm_password = "cluster_admin_password"
 
 ## Cluster Name
-cluster_name = "Cluster 1 - CDH4"
+cluster_name = "Cluster 1"
 
 ## ******************************************
 
 if len(sys.argv) != 4:
   print "Error: Wrong number of arguments"
   print "Usage: add-agent.py <flume-service-name> <agent-ref> <agent-host>"
-  print "Example: add-agent.py Flume-NG-Service agent1 host1.acme.org"
+  print "Example: add-agent.py Flume agent1 host1.acme.org"
   quit(1)
 
 flume_service_name = sys.argv[1]
