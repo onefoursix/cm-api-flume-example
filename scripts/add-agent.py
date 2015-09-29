@@ -7,7 +7,7 @@
 ##
 ## Usage: add-agent.py <flume-service-name> <agent-ref> <agent-host>
 ## 
-##        for example: add-agent.py Flume-NG-Service agent1 host1.acme.org
+##        for example: add-agent.py Flume agent1 host1.acme.org
 ## 
 ##        (the rest of the values are set in the script below)
 ## 
