@@ -118,7 +118,7 @@ Note the script sets each Agent's name:
     
 ####Set or update an Agent's Config File
 Edit the Flume configuration file(s) you want to use to set your Agents' configuration.
-In this example there are configuration files for Agents named agent0 and agent1 in the directory flume-conf
+This project includes trivial configuration files for agent0 and agent1 in the "flume-conf" directory
 
 Edit the file set-agent-config.py.  Set the following:
 - cm_host
