@@ -36,7 +36,7 @@ Steps to install the Python CM API Client:
 
 ![](images/github.jpg)
 
-Once the right branch is selected, right-click on the "Download ZIP" button:
+3) Once the right branch is selected, right-click on the "Download ZIP" button:
 
 ![](images/github-2.jpg)
 
@@ -48,22 +48,22 @@ If you need an older version, for example, the CM5.2 version, the download link 
 
 	https://github.com/cloudera/cm_api/archive/cm5-5.2.zip
 
-3) Once you have the download link, download the archive on the machine where you want to install the CM API:
+4) Once you have the download link, download the archive on the machine where you want to install the CM API:
 
 	$ wget https://github.com/cloudera/cm_api/archive/cm5-5.4.zip
 
 
-4) Install some utils you'll need: 
+5) Install some utils you'll need: 
 
     $ sudo yum -y install python-setuptools
     $ sudo yum -y install unzip
 
 
-5) Unzip the archive:
+6) Unzip the archive:
 
 	$ unzip cm5*.zip
 
-6) Install the API:
+7) Install the API:
 
 	$ cd cm_api*/python
 	$ sudo python setup.py install
