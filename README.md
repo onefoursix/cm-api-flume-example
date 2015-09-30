@@ -30,9 +30,9 @@ I've listed below the steps I used on CentOS 6.6 to install the current version 
 
 Steps to install the Python CM API Client:
 
-Use a browser to go to [https://github.com/cloudera/cm_api](https://github.com/cloudera/cm_api)
+1) Use a browser to go to [https://github.com/cloudera/cm_api](https://github.com/cloudera/cm_api)
 
-Use the dropdown to pick the branch you need. For example, I will use the branch for CM5.4:
+2) Use the dropdown to pick the branch you need. For example, I will use the branch for CM5.4:
 
 ![](images/github.jpg)
 
@@ -48,22 +48,22 @@ If you need an older version, for example, the CM5.2 version, the download link 
 
 	https://github.com/cloudera/cm_api/archive/cm5-5.2.zip
 
-Once you have the download link, download the archive on the machine where you want to install the CM API:
+3) Once you have the download link, download the archive on the machine where you want to install the CM API:
 
 	$ wget https://github.com/cloudera/cm_api/archive/cm5-5.4.zip
 
 
-Install some utils you'll need: 
+4) Install some utils you'll need: 
 
     $ sudo yum -y install python-setuptools
     $ sudo yum -y install unzip
 
 
-Unzip the archive:
+5) Unzip the archive:
 
 	$ unzip cm5*.zip
 
-Install the API:
+6) Install the API:
 
 	$ cd cm_api*/python
 	$ sudo python setup.py install
