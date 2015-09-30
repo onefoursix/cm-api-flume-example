@@ -116,7 +116,7 @@ Note the script sets each Agent's name:
 
 ![](images/cm-6.jpg) 
     
-####Set or update an Agent's Config File (flume.conf)
+####Set or update an Agent's Config File
 Edit the Flume configuration file(s) you want to use to set your Agents' configuration.
 In this example there are configuration files for Agents named agent0 and agent1 in the directory flume-conf
 
