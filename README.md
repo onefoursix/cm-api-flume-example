@@ -101,7 +101,7 @@ Edit the file add-agent.py.  Set the following:
 
 The Cloudera Manager login needs to have at least "Cluster Administrator" role to add an Agent to a Flume Service
 
-Execute the add-agent.py script passing it the name for the Flume Service, the name of the Agent you want to create and the host the Agent should be deployed on. Note the Agent name will be the value used within the flume.conf file so should typically be a short lowercase name. 
+Execute the add-agent.py script passing it the name for the Flume Service, the name of the Agent you want to create and the host the Agent should be deployed on. The Agent name should typically be a short lowercase name. 
 
 For example:
 
