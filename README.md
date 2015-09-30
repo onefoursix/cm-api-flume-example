@@ -28,6 +28,7 @@ At the time of this writing, the current version of CM is 5.4.7 and I will insta
 
 I've listed below the steps I used on CentOS 6.6 to install the current version (v10) of the Pythin CM API Client for use with CM 5.4.x  (docs are [here](http://cloudera.github.io/cm_api/docs/python-client/)) 
 
+Steps to install the Python CM API Client:
 
 Use a browser to go to [https://github.com/cloudera/cm_api](https://github.com/cloudera/cm_api)
 
