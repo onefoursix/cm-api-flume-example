@@ -80,6 +80,8 @@ Change to the root of this example's scripts directory and edit the file create-
 - cluster_name
 - hdfs_service_name
 
+The Cloudera Manager login needs to have at least "Cluster Administrator" role to create the Service
+
 Execute the create-flume-service.py script passing it the name of the Flume Service you want to create.  
 For example:
 
@@ -96,6 +98,8 @@ Edit the file add-agent.py.  Set the following:
 - cm_login
 - cm_password
 - cluster_name
+
+The Cloudera Manager login needs to have at least "Cluster Administrator" role to add an Agent to a Flume Service
 
 Execute the add-agent.py script passing it the name for the Flume Service, the name of the Agent you want to create and the host the Agent should be deployed on. Note the Agent name will be the value used within the flume.conf file so should typically be a short lowercase name. 
 
@@ -124,6 +128,8 @@ Edit the file set-agent-config.py.  Set the following:
 - cluster_name
 - flume_service_name
 
+The Cloudera Manager login needs to have at least "Configurator" role to modify the Agent's configuration
+
 Execute the set-agent-config.py script passing it the Agent name and the configuration file.  For example
 
     ./set-agent-config.py agent0 ../flume-conf/agent0-flume.conf
@@ -147,6 +153,8 @@ Edit the file restart-agent.py.  Set the following:
 - cm_password
 - cluster_name
 - flume_service_name
+
+The Cloudera Manager login needs to have at least "Operator" role to restart an Agent
 
 Execute the restart-agent.py script passing it the Agent name.  
 
