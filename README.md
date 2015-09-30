@@ -21,10 +21,10 @@ More information:  [Flume](http://archive.cloudera.com/cdh5/cdh/5/flume-ng/Flume
 - A CM login with at least "Operator" role to start or restart Agent(s)
 
 
-####Install the Cloudera Manager API Python Client
-Download the version of the CM API Python Client that matches the version of Cloudera Manager you are using. Consult the chart [here](http://cloudera.github.io/cm_api/docs/releases/) to see what version of the the API you will need to install
+####Install the Cloudera Manager API 
+Download the version of the CM API that matches the version of Cloudera Manager you are using. Consult the chart [here](http://cloudera.github.io/cm_api/docs/releases/) to see what version of the the API you will need to install
 
-At the time of this writing, the current version of CM is 5.4.7 and I will install the version 10 of the CM API Python Client
+At the time of this writing, the current version of CM is 5.4.7 and I will install version 10 of the CM API
 
 Instructions for installing the CM API Python Client are [here](http://cloudera.github.io/cm_api/docs/python-client/) 
 
