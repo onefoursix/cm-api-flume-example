@@ -36,7 +36,7 @@ Steps to install the Python CM API Client:
 
 ![](images/github.jpg)
 
-3) Once the right branch is selected, right-click on the "Download ZIP" button:
+3) Once the right branch is selected, right-click on the "Download ZIP" button and select "Copy Link Address":
 
 ![](images/github-2.jpg)
 
