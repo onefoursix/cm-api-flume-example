@@ -167,7 +167,7 @@ I'll restart both agents:
 
 ####Viewing the results in Cloudera Manager
 
-Here are the two Agents:
+In addition to the Agent's configuration, shown in the screenshots above, here we see the two Agents up and running:
 
 ![](images/flume-agents.jpg)
 
