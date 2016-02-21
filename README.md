@@ -26,7 +26,7 @@ Download the version of the CM API that matches the version of Cloudera Manager 
 
 At the time of this writing, the current version of CM is 5.4.7 and I will install version 10 of the CM API
 
-I've listed below the steps I used on CentOS 6.6 to install the current version (v10) of the Pythin CM API Client for use with CM 5.4.x  (docs are [here](http://cloudera.github.io/cm_api/docs/python-client/)) 
+I've listed below the steps I used on CentOS 6.6 to install the current version (v10) of the Python CM API Client for use with CM 5.4.x  (docs are [here](http://cloudera.github.io/cm_api/docs/python-client/)) 
 
 Steps to install the Python CM API Client:
 
