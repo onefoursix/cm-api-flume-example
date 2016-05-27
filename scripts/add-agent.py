@@ -35,6 +35,11 @@ cm_password = "cluster_admin_password"
 ## Cluster Name
 cluster_name = "Cluster 1"
 
+## CM API Version 
+## See the chart here to get the right value:
+## I'll default to v
+cluster_name = "Cluster 1"
+
 ## ******************************************
 
 if len(sys.argv) != 4:
