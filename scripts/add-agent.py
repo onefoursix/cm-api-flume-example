@@ -36,8 +36,8 @@ cm_password = "cluster_admin_password"
 cluster_name = "Cluster 1"
 
 ## CM API Version 
-## See the chart here to get the right value:
-## I'll default to v
+## See the chart here to get the right value: http://cloudera.github.io/cm_api/docs/releases/
+## I'll default to vfor CM 5.4
 cluster_name = "Cluster 1"
 
 ## ******************************************
