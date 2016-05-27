@@ -37,8 +37,8 @@ cluster_name = "Cluster 1"
 
 ## CM API Version 
 ## See the chart here to get the right value: http://cloudera.github.io/cm_api/docs/releases/
-## I'll default to vfor CM 5.4
-cluster_name = "Cluster 1"
+## I'll default to v10 of the API for Cloudera Manager 5.4
+cm_api_version = "10"
 
 ## ******************************************
 
@@ -53,7 +53,7 @@ agent_ref = sys.argv[2]
 agent_host = sys.argv[3]
 
 ## Get the api 
-api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password)
+api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password, version=cm_api_version)
 
 ## Get the cluster
 cluster = api.get_cluster(cluster_name)
