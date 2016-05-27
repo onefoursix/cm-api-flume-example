@@ -54,6 +54,7 @@ Edit the file add-agent.py.  Set the following:
 - cm_login
 - cm_password
 - cluster_name
+- CM API Version (see the chart (here)[http://cloudera.github.io/cm_api/docs/releases/] to get the right version)
 
 The Cloudera Manager login needs to have at least "Cluster Administrator" role to add an Agent to a Flume Service
 
