@@ -38,6 +38,11 @@ cluster_name = "Cluster 1"
 ## Name of Flume Service
 flume_service_name = "Flume"
 
+## CM API Version 
+## See the chart here to get the right value: http://cloudera.github.io/cm_api/docs/releases/
+## I'll default to v10 of the API for Cloudera Manager 5.4
+cm_api_version = "10"
+
 ## ******************************************
 
 
@@ -52,7 +57,7 @@ agent_ref = sys.argv[1]
 print "Restarting Flume Agent '" + agent_ref + "' for Flume Service '" + flume_service_name + "' on cluster '" + cluster_name + "'..."
 
 ## Get the CM api
-api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password)
+api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password, version=cm_api_version)
 
 ## Get the cluster
 cluster = api.get_cluster(cluster_name)
