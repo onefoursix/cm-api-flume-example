@@ -37,6 +37,11 @@ cluster_name = "Cluster 1"
 # Name of the existing HDFS Service or "none"
 hdfs_service_name = "hdfs"
 
+## CM API Version 
+## See the chart here to get the right value: http://cloudera.github.io/cm_api/docs/releases/
+## I'll default to v10 of the API for Cloudera Manager 5.4
+cm_api_version = "10"
+
 ## *****************************************
 
 
@@ -51,7 +56,7 @@ flume_service_name = sys.argv[1]
 
 ## Connect to CM
 print "\nConnecting to Cloudera Manager at " + cm_host + ":" + cm_port + "..."
-api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password)
+api = ApiResource(server_host=cm_host, server_port=cm_port, username=cm_login, password=cm_password, version=cm_api_version)
 print "Connection is good!"
 
 ## Get the Cluster 
