@@ -52,7 +52,7 @@ Edit the file add-agent.py.  Set the following:
 - cm_login
 - cm_password
 - cluster_name
-- CM API Version -- You can find the correct version number in the chart [here](http://cloudera.github.io/cm_api/docs/releases/)
+- cm_api_version -- You can find the correct version number in the chart [here](http://cloudera.github.io/cm_api/docs/releases/)
 
 The Cloudera Manager login needs to have at least "Cluster Administrator" role to add an Agent to a Flume Service
 
@@ -82,6 +82,8 @@ Edit the file set-agent-config.py.  Set the following:
 - cm_password
 - cluster_name
 - flume_service_name
+- cm_api_version -- You can find the correct version number in the chart [here](http://cloudera.github.io/cm_api/docs/releases/)
+
 
 The Cloudera Manager login needs to have at least "Configurator" role to modify the Agent's configuration
 
@@ -108,6 +110,8 @@ Edit the file restart-agent.py.  Set the following:
 - cm_password
 - cluster_name
 - flume_service_name
+- cm_api_version -- You can find the correct version number in the chart [here](http://cloudera.github.io/cm_api/docs/releases/)
+
 
 The Cloudera Manager login needs to have at least "Operator" role to restart an Agent
 
