@@ -33,6 +33,8 @@ Change to the root of this example's scripts directory and edit the file create-
 - cm_password
 - cluster_name
 - hdfs_service_name
+- cm_api_version -- You can find the correct version number in the chart [here](http://cloudera.github.io/cm_api/docs/releases/)
+
 
 The Cloudera Manager login needs to have at least "Cluster Administrator" role to create the Service
 
