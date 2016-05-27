@@ -24,7 +24,7 @@ More information:  [Flume](http://archive.cloudera.com/cdh5/cdh/5/flume-ng/Flume
 ####Install the Cloudera Manager API 
 Follow the steps [here](https://cloudera.github.io/cm_api/docs/python-client/) to install the Cloudera Manager API Python client on the machine where you will run these scripts
 
-
+You will need to set the CM-API version number in each script.  You can find the correct version number in the chart (here)[http://cloudera.github.io/cm_api/docs/releases/]
 
 ####Create a Flume Service
 
@@ -54,7 +54,7 @@ Edit the file add-agent.py.  Set the following:
 - cm_login
 - cm_password
 - cluster_name
-- CM API Version -- see the chart (here)[http://cloudera.github.io/cm_api/docs/releases/] to get the right version
+- CM API Version (see the comment above to get find the right version number) 
 
 The Cloudera Manager login needs to have at least "Cluster Administrator" role to add an Agent to a Flume Service
 
